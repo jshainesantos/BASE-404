@@ -1,0 +1,15 @@
+body {
+    text-decoration: none;
+}
+
+.tiktok-button {
+    color: rgb(0, 0, 0);
+    background-color: #060f86;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    background-color: rgb(255, 224, 224) !important;
+}
