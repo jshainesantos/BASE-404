@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a flex container */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Initial justify-content value */
+    align-items: center; /* Initial align-items value */
+}
+
+/* Create flex items */
+.flex-item {
+    padding: 20px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    flex: 1; /* Distribute space evenly among items */
+}
+
+/* Media query for screens below 600px */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Change to a column layout */
+        justify-content: center; /* Center items along the main axis */
+        align-items: center; /* Align items to the start of the cross axis */
+        
+    }
+    
+    /* Add some spacing to the flex items in the column layout */
+    .flex-item {
+        margin: 10px 0;
+    }
+}
+
