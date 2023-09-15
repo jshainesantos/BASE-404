@@ -32,6 +32,7 @@ body {
     /* Add some spacing to the flex items in the column layout */
     .flex-item {
         margin: 10px 0;
+        background-color: #db3460;
     }
 }
 
