@@ -1,0 +1,19 @@
+.list-group-item {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .btn-close {
+    margin-right: 12px;
+    padding-bottom: 8px;
+  }
+
+  #addTask {
+    width: 20%;
+  }
+
+  @media (max-width: 768px) {
+    #addTask {
+      width: 100%;
+    }
+  }
