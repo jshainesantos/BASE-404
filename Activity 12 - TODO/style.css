@@ -1,19 +1,41 @@
+.container {
+  max-width: 500px;
+}
+
+#app {
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#addTask {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
 .list-group-item {
-    padding: 10px;
-    font-size: 16px;
-  }
+  padding: 10px;
+  cursor: pointer;
+}
 
-  .btn-close {
-    margin-right: 12px;
-    padding-bottom: 8px;
-  }
+.list-group-item.done {
+  text-decoration: line-through;
+}
 
-  #addTask {
-    width: 20%;
-  }
+.btn-close {
+  float: right;
+}
 
-  @media (max-width: 768px) {
-    #addTask {
-      width: 100%;
-    }
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
   }
+}
