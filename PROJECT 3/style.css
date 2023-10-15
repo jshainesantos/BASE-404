@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap");
+
+.container {
+  max-width: 960px;
+}
+
+.card {
+  margin-top: 30%;
+}
+
+body {
+  background-color: #c3b1e1;
+  font-family: "Poppins", sans-serif;
+}
+
+#searchBtn {
+  background-color: #aa88e0;
+  color: white;
+}
+
+
