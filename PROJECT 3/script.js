@@ -1,6 +1,5 @@
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const result = document.querySelector("#result");
-const sound = document.querySelector("#sound");
 const searchBtn = document.querySelector("#searchBtn");
 
 searchBtn.addEventListener("click", () => {
