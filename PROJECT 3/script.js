@@ -20,6 +20,7 @@ searchBtn.addEventListener("click", () => {
       <span class="text-secondary">|</span>
       <span class="text-secondary fst-italic"> "${data[0].meanings[0].definitions[0].example}" </span>
   </div>`;
+      document.getElementById("inputWord").value = "";
     })
     .catch(() => {
       result.innerHTML = `<h5 class="ms-2">No Results Found.
