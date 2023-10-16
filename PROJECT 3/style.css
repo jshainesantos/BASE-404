@@ -9,12 +9,16 @@
 }
 
 body {
-  background-color: #c3b1e1;
+  background-color: #a791c9;
   font-family: "Poppins", sans-serif;
 }
 
 #searchBtn {
-  background-color: #aa88e0;
+  background-color: #a77ee8;
+  color: white;
+}
+#searchBtn:hover {
+  background-color: #ac8dde;
   color: white;
 }
 
