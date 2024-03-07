@@ -1,0 +1,42 @@
+TRUE   1. 5 > 3 AND 4 <= 6 
+TRUE   2. 7 < 5 OR 9 >= 8 
+TRUE   3. NOT (2 > 3) 
+TRUE   4. 10 == 10 AND 3 < 2 OR 8 != 9 
+TRUE   5. (6 >= 6 AND 5 < 7) OR (3 != 3 AND NOT 4 > 2) 
+FALSE  6. NOT (8 <= 7 AND 10 > 11) OR (1 == 2 AND NOT 9 < 10) 
+TRUE   7. (12 > 10 OR 7 <= 5) AND (6 == 6 OR 4 > 7 AND 8 < 10) 
+FALSE  8. NOT (3 * 2 == 6 OR 4 + 1 > 6 AND 9 / 3 < 3) 
+TRUE   9. (NOT 5 > 4 OR 2 * 3 < 7) AND (7 - 4 == 3 OR 10 + 5 > 15) 
+FALSE  10.NOT (15 / 3 == 5 AND 8 - 5 > 2) AND (NOT 4 * 2 > 7 OR 6 + 3 > 8 AND 9 < 11)
+
+	
+SOLUTION
+1. true AND true = TRUE
+2. false OR true = TRUE
+3. true false = TRUE
+4. true AND false OR true
+   = false OR true 
+   = TRUE
+5. (true AND true) OR (false AND !true = false)
+   = true OR false
+   = TRUE
+6. not (false AND false) OR (false AND !true = false)
+   !false OR false
+   = FALSE
+7. (true OR false) AND (true OR false AND true)
+   = true AND true OR false
+   = true OR false
+   = TRUE
+8. not (true OR false AND false)
+   = not true OR false
+   = !true = false OR false
+   = false
+9. (!true OR true) AND (true OR false)
+   = (false OR true) AND (true OR false)
+   = true AND true
+   = TRUE
+10. not (true AND true) AND (not true OR true AND true)
+   = not true AND !true OR true
+   = false AND true
+   = FALSE
+
