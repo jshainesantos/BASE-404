@@ -1,0 +1,163 @@
+//Santos, Shaine
+
+//1.1. Write a function named greet that accepts a name as a parameter and returns a greeting message.
+function greet(name) {
+  let greeting = `Hello ${name}`;
+  return greeting;
+}
+console.log(greet("Shaine"));
+
+//1.2. Write a function add that accepts two numbers and returns their sum.
+function add(a, b) {
+  let sum = a + b;
+  return sum;
+}
+console.log(add(2, 6));
+
+//2.1. Write a function **`getDay`** that accepts a number (1-7) and returns the day of the week.
+function getDay(day) {
+  switch (day) {
+    case 1:
+      console.log(`Monday`);
+      break;
+    case 2:
+      console.log(`Tuesday`);
+      break;
+    case 3:
+      console.log(`Wednesday`);
+      break;
+    case 4:
+      console.log(`Thursday`);
+      break;
+    case 5:
+      console.log(`Friday`);
+      break;
+    case 6:
+      console.log(`Saturday`);
+      break;
+    case 7:
+      console.log(`Sunday`);
+      break;
+    default:
+      console.log(`Invalid!`);
+  }
+}
+getDay(6);
+
+//Write a function fruitInfo that accepts the name of a fruit and returns a brief description of the fruit.
+function fruitInfo(name) {
+  switch (name) {
+    case "apple":
+      console.log(`Apples are sweet and crunchy!`);
+      break;
+    case "strawberry":
+      console.log(`strawberries are `);
+      break;
+    case "banana":
+      console.log(`Bananas are `);
+      break;
+    case "orange":
+      console.log(`Oranges are`);
+      break;
+    default:
+      console.log(`Invalid!`);
+  }
+}
+fruitInfo(`apple`);
+
+// Create a person object with properties firstName, lastName, and a method fullName that returns the person's full name.
+let person = {
+    firstName: "Shaine",
+    lasttName: "Santos",
+  },
+  fullName = function () {
+    return `${person.firstName} ${person.lasttName}`;
+  };
+console.log(fullName());
+
+//Write a function getAge that accepts an object with a property birthYear and returns the age of the person.
+function getAge() {
+  const currentYear = 2023;
+  let person = {
+    birthYear: 2000, //example
+  };
+  return currentYear - person.birthYear;
+}
+console.log(getAge());
+
+//4.1. Write a function getFirstElement that accepts an array and returns the first element.
+function getFirstElement() {
+  let elements = ["first", "second", "third"];
+  return elements[0];
+}
+console.log(getFirstElement());
+
+//4.2. Write a function getLastElement that accepts an array and returns the last element.
+function getLastElement() {
+  let elements = ["first", "second", "third"];
+  return elements[elements.length - 1];
+}
+console.log(getLastElement());
+
+// 5.1. Write a function countToTen that prints numbers from 1 to 10 using a for loop.
+function countToTen() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+countToTen();
+
+// 5.2. Write a function listArray that accepts an array and prints each element using a for loop.
+function listArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+const myArray = [1, 2, 3, 4, 5];
+listArray(myArray);
+
+
+// 5.3. Write a function findEvenNumbers that accepts a number n and returns an array of all even numbers from 2 up to n using a while loop.
+function findEvenNumbers(n) {
+  const evenNumbers = [];
+  let currentNumber = 2;
+
+  while (currentNumber <= n) {
+    evenNumbers.push(currentNumber);
+    currentNumber += 2;
+  }
+  return evenNumbers;
+}
+const evenNumbersUpToTen = findEvenNumbers(10);
+console.log(evenNumbersUpToTen);
+
+
+
+// 5.4. Write a function multiplyArray that accepts an array of numbers and multiplies each number by 2 using a for loop.
+function multiplyArray(arr) {
+  const multipliedArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    multipliedArray.push(arr[i] * 2);
+  }
+  return multipliedArray;
+}
+
+const originalArray = [1, 2, 3, 4, 5];
+const multipliedResult = multiplyArray(originalArray);
+console.log(multipliedResult);
+
+
+// 5.5. Write a function sumArray that accepts an array of numbers and returns the sum of all elements.
+const arrays = [2, 3, 4];
+function sumArray() {
+  let sum = 0;
+  for (let i = 0; i < arrays.length; i++) {
+    sum += arrays[i];
+  }
+  console.log(sum);
+  return sum;
+}
+
+sumArray(); 

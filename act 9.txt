@@ -1,0 +1,57 @@
+//Santos, Shaine
+
+//Introduction to Variables
+let city = `Los Angeles`;
+const birthYear = `July 13, 2002`;
+const country = `Philippines`;
+
+city = `California`;
+
+//Printing to Console
+console.log(`I live in ${city}, ${country}.`);
+
+//Working with Strings
+let sentence = `I was born in ` + birthYear; 
+console.log(sentence)
+
+//template literals
+let statement = `I currently reside in ${city}, which is in ${country}.`;
+console.log(statement);
+
+//Operators
+let a = 7;
+let b = 3;
+
+let sum = a + b;  
+let difference = a - b; 
+let product = a * b;  
+let quotient = a / b; 
+
+console.log(`The sum of ${a} and ${b} is ${sum}.`)
+console.log(`The difference of ${a} and ${b} is ${difference}.`)
+console.log(`The product of ${a} and ${b} is ${product}.`)
+console.log(`The quotient of ${a} and ${b} is ${quotient}.`)
+
+//Ternary Operator
+let century = (birthYear < 2000) ? "20th century" : "21st century";
+console.log(century);
+
+//Control Flow Statements
+//if else
+if (century == `21st century`) {
+  console.log(`You are from the 21st century.`)
+} else {
+  console.log(`You are from the 20th century.`)
+};
+
+//for loop
+for(let i = 1; i <= 5; i++) {
+  console.log(i)
+}
+
+//while loop
+
+
+
+
+
